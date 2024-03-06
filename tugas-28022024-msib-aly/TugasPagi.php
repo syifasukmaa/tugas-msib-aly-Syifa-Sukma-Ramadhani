@@ -1,7 +1,11 @@
 <?php
 
+interface Access
+{
+  public function accessWebsite();
+}
 // parent
-class Person
+class Person implements Access
 {
   protected $nama;
   private $kampus;
